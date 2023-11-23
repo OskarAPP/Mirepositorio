@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 10; /* Corregido: cambió de 40 a 0 para eliminar el margen general */
+    background-color: #800000; /* Color café */
+  }
+
+  .navbar {
+    background-color: rgb(52, 52, 136);
+    padding: 1px 0;
+    width: 100%;
+  }
+  
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 100%;
+  }
+  .navbar-brand {
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+
+
+  .title-container h1 {
+    font-size: 35px; /* Ajusta el tamaño de las letras según tus preferencias */
+    text-align: center; /* Asegura que el texto esté centrado */
+    margin: 20px 0; /* Ajusta el margen según tus necesidades */
+    color: #fff; /* Color del texto blanco */
+  }
+
+  .memory-game {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(2, 150px);
+    grid-gap: 100px; /* Cambiado de 100px a 10px para reducir el espacio entre las cartas */
+    margin: 1px;
+  }
+  
+  .card {
+    width: 200px;
+    height: 280px;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    cursor: pointer;
+    overflow: hidden;
+    border: 1px solid blue;
+  }
+
+  .card img {
+    max-width: 100%;
+    max-height: 100%;
+    display: none;
+    width: 100%;
+  }
+
+  .footer {
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
